@@ -1,0 +1,45 @@
+h1 {
+  font-size: 200%;
+}
+
+#color_1 {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+#color_2 {
+  height: 100px;
+  width: 200px;
+  background-color: grey;
+}
+
+#color_3 {
+  height: 100px;
+  width: 300px;
+  background-color: black;
+}
+
+#color_4 {
+  height: 100px;
+  width: 400px;
+  background-color: grey;
+}
+
+#color_5 {
+  height: 100px;
+  width: 500px;
+  background-color: black;
+}
+
+#color_6 {
+  height: 100px;
+  width: 600px;
+  background-color: grey;
+}
+
+#color_7 {
+  height: 100px;
+  width: 700px;
+  background-color: black;
+}
