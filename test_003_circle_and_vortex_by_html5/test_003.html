@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <title>circle and vortex</title>
+
+    <script type="text/javascript">
+    function draw(){
+        var canvas = document.getElementById('circle_and_vortex');
+        if (canvas.getContext){
+            var ctx = canvas.getContext('2d');
+
+        var num = 0.1;
+
+        for (i = 0; i < 200; i++){
+
+            //vortex
+            ctx.beginPath();
+            ctx.arc(300, 300, 100+i, Math.PI*0.45 + num, Math.PI*0.55 + num, false);
+            ctx.stroke();
+
+            //circle
+            ctx.beginPath();
+            ctx.arc(300, 300, 100, Math.PI*1.45 - num, Math.PI*1.55, false);
+            ctx.stroke();
+
+            num += 0.1;
+            }
+        }
+    }
+
+    </script>
+
+    <style type="text/css">
+      canvas { border: 1px solid #999; }
+    </style>
+
+</head>
+
+  <body onload="draw();">
+    <center>
+      <h1>circle and vortex</h1>
+      <h2>test_003</h2>
+      <canvas id="circle_and_vortex" width="600" height="600"></canvas>
+    </center>
+  </body>
+
+</html>
